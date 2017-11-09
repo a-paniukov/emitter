@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package beget.emitter.v1.vps;
+
+message VpsChangedEvent {
+    // Идентификатор Vps (uuid)
+    string vps_id = 1;
+}

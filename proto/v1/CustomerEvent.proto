@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package beget.emitter.v1.customer;
+
+message CustomerBlocked {
+
+}
+
+message CustomerUnBlocked {
+
+}
