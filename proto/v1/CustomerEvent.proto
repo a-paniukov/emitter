@@ -9,3 +9,7 @@ message CustomerBlocked {
 message CustomerUnBlocked {
 
 }
+
+message CustomerUpdate {
+
+}
