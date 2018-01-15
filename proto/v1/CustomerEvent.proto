@@ -13,3 +13,7 @@ message CustomerUnBlocked {
 message CustomerUpdate {
 
 }
+
+message TicketReply {
+
+}
