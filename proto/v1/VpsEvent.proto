@@ -6,3 +6,10 @@ message VpsChangedEvent {
     // Идентификатор Vps (uuid)
     string vps_id = 1;
 }
+
+message VpsBackupRestoreEvent {
+    // Идентификатор Vps (uuid)
+    string vps_id = 1;
+    // Идентификатор бэкапа (uuid)
+    uint64 backup_order_id = 2;
+}
