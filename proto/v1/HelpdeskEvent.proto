@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package beget.emitter.v1.helpdesk;
+
+message TicketReplyEvent {
+    uint32 ticket_id = 1;
+}
+
+message TicketAssignEvent {
+    uint32 ticket_id = 1;
+}
+
+message TicketMoveEvent {
+    uint32 ticket_id = 1;
+}
+
+message TicketChangeStatusEvent {
+    uint32 ticket_id = 1;
+}
