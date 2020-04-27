@@ -8,12 +8,35 @@ message TicketReplyEvent {
 
 message TicketAssignEvent {
     uint32 ticket_id = 1;
+    string assignee_name = 2;
 }
 
 message TicketMoveEvent {
     uint32 ticket_id = 1;
+    Department department = 2;
+    string department_updated_at = 3;
+    string queue = 4;
+
+    enum Department {
+        SUPPORT = 0;
+        ADMIN = 1;
+        MANAGER = 2;
+        FINANCE = 3;
+        VPS = 4;
+    }
 }
 
 message TicketChangeStatusEvent {
+    uint32 ticket_id = 1;
+    Status status = 2;
+    string assignee_name = 3;
+
+    enum Status {
+        OPEN = 0;
+        FEEDBACK = 1;
+    }
+}
+
+message TicketCreateEvent {
     uint32 ticket_id = 1;
 }
