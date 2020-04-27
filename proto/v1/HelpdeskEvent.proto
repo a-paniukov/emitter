@@ -17,3 +17,7 @@ message TicketMoveEvent {
 message TicketChangeStatusEvent {
     uint32 ticket_id = 1;
 }
+
+message TicketCreateEvent {
+    uint32 ticket_id = 1;
+}
