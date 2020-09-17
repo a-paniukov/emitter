@@ -13,3 +13,13 @@ message VpsBackupRestoreEvent {
     // Идентификатор бэкапа (uuid)
     uint64 backup_order_id = 2;
 }
+
+message VpsSnapshotCreateEvent {
+    // Идентификатор снапшота
+    uint64 id = 1;
+}
+
+message VpsSnapshotRestoreEvent {
+    // Идентификатор снапшота
+    uint64 id = 1;
+}
