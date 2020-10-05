@@ -23,3 +23,8 @@ message VpsSnapshotRestoreEvent {
     // Идентификатор снапшота
     uint64 id = 1;
 }
+
+message VpsSnapshotRemoveEvent {
+    // Идентификатор снапшота
+    uint64 id = 1;
+}
